@@ -12,7 +12,7 @@ public class IndexController {
     private String appMode;
 
     @Autowired
-    public IndexController(Environment environment){
+    public IndexController(Environment environment) {
         appMode = environment.getProperty("app-mode");
     }
 
